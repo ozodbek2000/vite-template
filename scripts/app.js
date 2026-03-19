@@ -1,0 +1,58 @@
+
+
+import IMask from "imask";
+
+import "/styles/app.css";
+import "./custom-components.js";
+
+document.addEventListener("DOMContentLoaded", () => {
+    /* Set scrollbar size */
+    const scrollbarSize = window.innerWidth - document.documentElement.clientWidth;
+
+    document.documentElement.style.setProperty("--scrollbar-size", `${scrollbarSize}px`);
+    /* Set scrollbar size end */
+
+    /* Header */
+    const header = document.querySelector("header.header");
+    if (header && header.clientHeight) {
+        // const headerHeight = header.clientHeight;
+
+        function handleHeaderHeight() {
+            const headerHeight = header.clientHeight;
+            document.documentElement.style.setProperty("--header-height", `${headerHeight}px`);
+        }
+        handleHeaderHeight();
+        window.addEventListener("scroll", function () {
+            handleHeaderHeight();
+        });
+    }
+
+    /* Fixed header */
+    window.addEventListener("scroll", function () {
+        if (window.scrollY >= 20) {
+            header.classList.add("fixed-header");
+        } else {
+            header.classList.remove("fixed-header");
+        }
+    });
+    /* Fixed header end */
+
+    /* Header end */
+
+    /* Gallery */
+    Fancybox.bind("[data-fancybox]");
+    /* Gallery end */
+
+    /* Phone mask */
+    const phoneInputs = document.querySelectorAll(".phone-input");
+
+    if (phoneInputs) {
+        phoneInputs.forEach((phoneInput) => {
+            new IMask(phoneInput, {
+                mask: "+{998}(00)000-00-00",
+                lazy: false,
+            });
+        });
+    }
+    /* Phone mask end */
+});

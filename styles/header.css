@@ -1,0 +1,10 @@
+.header {
+    transition: all 0.3s;
+
+    &.fixed-header {
+        box-shadow: 0 0 0.5rem 0 var(--color-black-10);
+    }
+}
+
+.header-menu-dialog {
+}
