@@ -8,52 +8,136 @@
     </head>
     <body>
         <div class="root">
+            
+            <div class="bg-brown text-white relative z-3">
+                <div class="container flex-between-center h-12.5">
+                    <div class="flex gap-2 cursor-pointer">
+                        <svg class="size-6 ">
+                            <use xlink:href="/sprites.svg#globe"/>
+                        </svg>
+                        <span>RU</span>
+                    </div>
+                    <div class=""><a href="##">Магазины</a></div>
+                </div>
+            </div>
+
             {{>header}}
 
             <main>
-                <section class="py-3.5">
+                <section class="main py-3.5">
                     <div class="container">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima sequi laboriosam illo corrupti
-                        sunt nemo impedit, ducimus suscipit adipisci asperiores aperiam, dolor a, excepturi quasi autem
-                        debitis aut saepe quas rem voluptatum. Quasi ipsam voluptatibus ullam, id architecto cumque vel,
-                        aliquid eum aut et vero libero perspiciatis ea doloribus reprehenderit at eaque commodi?
-                        Pariatur nisi cumque consectetur maxime sunt fugit nihil corporis tempore obcaecati, eius, qui
-                        laudantium atque hic! Quibusdam, in. Unde tempora harum dolorem ipsum, et cupiditate enim illum
-                        perspiciatis ullam quasi quod provident itaque nam sit veritatis delectus, magnam dicta. Rerum
-                        ea tenetur eum voluptatum dicta nostrum molestias deleniti nihil reprehenderit id doloremque,
-                        iusto fugit vitae hic voluptas ipsum, explicabo officia laudantium modi quas. Iure, quisquam?
-                        Consequuntur quas placeat deleniti repellendus eligendi quaerat quia, minima, et nostrum
-                        aspernatur eius perspiciatis natus at sunt quae debitis excepturi fugit tempora aliquid.
-                        Inventore voluptatem labore, eos ut amet voluptatum totam commodi dolor in aliquid sed! Nemo
-                        corrupti veritatis hic quos excepturi odit dolores quis reprehenderit facilis consequatur iure
-                        similique, blanditiis explicabo quod provident unde, esse temporibus labore accusamus ex rerum
-                        quidem illo. Ipsam laudantium repudiandae corporis quae eligendi laboriosam quos labore! Numquam
-                        laudantium placeat debitis cum odio molestias libero quis ex dolore eaque perspiciatis
-                        praesentium optio, quaerat magni, autem iste facere quidem commodi nisi minus fugit sed. Nisi
-                        ullam esse architecto, dignissimos doloribus quibusdam ipsum deleniti voluptas dolor assumenda
-                        accusamus earum perferendis officiis perspiciatis recusandae repudiandae distinctio cupiditate
-                        neque aliquid. Aliquam sequi voluptatibus corrupti, tenetur repellendus ex voluptatum eum
-                        cupiditate provident nulla dolores eaque iste accusamus, eos libero! Nostrum, temporibus. Iure
-                        ad rem id sapiente facere asperiores alias deleniti, eaque saepe est, non inventore, minus
-                        dolores ut nisi ullam cupiditate veniam nesciunt rerum vero officia. Provident, at aliquam autem
-                        exercitationem labore sunt eveniet voluptates eum facere quibusdam laboriosam, iusto, dolores
-                        aliquid laborum officia sapiente architecto ipsa eaque ratione? Ipsa fugit non totam natus
-                        tempore distinctio saepe illum incidunt, hic accusantium vitae quo nobis quasi, eveniet nesciunt
-                        corporis soluta ea, cum adipisci! Eius quos deleniti consequuntur sequi modi natus iure hic quia
-                        alias reiciendis beatae vero unde, dicta corrupti rem voluptates ipsum, deserunt molestias. Enim
-                        tempore id, voluptatem deserunt molestias, culpa est, minus itaque in temporibus aliquam
-                        aperiam. Quo doloribus sunt rem incidunt accusantium cum illo cumque officiis perferendis quis
-                        quaerat, esse placeat blanditiis pariatur unde totam vel autem ipsam quibusdam rerum labore
-                        voluptatibus, vitae ipsum? Ullam, repellat ipsum ipsam ex voluptatum cupiditate maiores
-                        laboriosam quam, voluptate itaque exercitationem nesciunt unde inventore mollitia reprehenderit,
-                        magnam aperiam! Maiores rem quas iusto non quaerat sunt odio, impedit consequatur consequuntur
-                        vel vero laborum, eius reiciendis a optio cumque porro omnis? Aspernatur, et adipisci sapiente
-                        deserunt voluptatum eius neque voluptatibus earum quidem consectetur hic est, assumenda
-                        perferendis distinctio. Perspiciatis adipisci vel temporibus. Quasi neque ea at alias tempore
-                        exercitationem totam veritatis quam doloremque ratione, sapiente, officiis quisquam vero impedit
-                        quibusdam quo enim a blanditiis magnam dignissimos itaque iusto nihil? Facere numquam aliquid,
-                        assumenda distinctio magni esse pariatur commodi, corporis temporibus consequuntur omnis quam
-                        laboriosam aut doloremque.
+                        <div class="flex gap-5">
+                            <div class="collection swiper-container min-w-0 overflow-hidden flex-[0_1_50%] rounded-md relative">
+                                <div class="swiper-wrapper inline-flex">
+                                    <div class="swiper-slide">
+                                        <img class="rounded-md" src="./public/images/jpg/banner01.jpg" alt="banner">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="rounded-md" src="./public/images/jpg/banner01.jpg" alt="banner">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="rounded-md" src="./public/images/jpg/banner01.jpg" alt="banner">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="rounded-md" src="./public/images/jpg/banner01.jpg" alt="banner">
+                                    </div>
+                                </div>
+                                <div class="absolute bottom-6! left-0 w-full flex justify-center z-1">
+                                    <div class="collection-pagination text-center"></div>
+                                </div>
+                            </div>
+                            <div class="discount swiper-container min-w-0 overflow-hidden flex-[0_1_50%] rounded-md relative">
+                                <div class="swiper-wrapper inline-flex">
+                                    <div class="swiper-slide">
+                                        <img class="rounded-md" src="./public/images/jpg/banner02.jpg" alt="banner">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="rounded-md" src="./public/images/jpg/banner02.jpg" alt="banner">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="rounded-md" src="./public/images/jpg/banner02.jpg" alt="banner">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="rounded-md" src="./public/images/jpg/banner02.jpg" alt="banner">
+                                    </div>
+                                </div>
+                                <div class="absolute bottom-6! left-0 w-full flex justify-center z-1">
+                                    <div class="discount-pagination text-center"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <div class="flex items-center gap-4.25 mt-12 whitespace-nowrap overflow-x-auto scroll-off relative" id="category-list">
+                                <a href="##" class="flex justify-center items-center flex-col bg-grey-1 rounded-md w-34 h-37 gap-1 text-sm flex-[0_0_135px] ">
+                                    <img src="./public/images/png/category01.png" alt="category">
+                                    <span class="max-w-25.75 text-center">Диваны</span>
+                                </a>
+                                <a href="##" class="flex justify-center items-center flex-col bg-grey-1 rounded-md w-34 h-37 gap-1 text-sm flex-[0_0_135px]">
+                                    <img src="./public/images/png/category02.png" alt="category">
+                                    <span class="max-w-25.75 text-center">Кровати</span>
+                                </a>
+                                <a href="##" class="flex justify-center items-center flex-col bg-grey-1 rounded-md w-34 h-37 gap-1 text-sm flex-[0_0_135px]">
+                                    <img src="./public/images/png/category03.png" alt="category">
+                                    <span class="max-w-25.75 text-center">Матрасы</span>
+                                </a>
+                                <a href="##" class="flex justify-center items-center flex-col bg-grey-1 rounded-md w-34 h-37 gap-1 text-sm flex-[0_0_135px]">
+                                    <img src="./public/images/png/category04.png" alt="category">
+                                    <span class="max-w-25.75 text-center">Кресла</span>
+                                </a>
+                                <a href="##" class="flex justify-center items-center flex-col bg-grey-1 rounded-md w-34 h-37 gap-1 text-sm flex-[0_0_135px]">
+                                    <img src="./public/images/png/category05.png" alt="category">
+                                    <span class="max-w-25.75 text-center">Шкафы</span>
+                                </a>
+                                <a href="##" class="flex justify-center items-center flex-col bg-grey-1 rounded-md w-34 h-37 gap-1 text-sm flex-[0_0_135px]">
+                                    <img src="./public/images/png/category06.png" alt="category">
+                                    <span class="max-w-25.75 text-center">Вешалки</span>
+                                </a>
+                                <a href="##" class="flex justify-center items-center flex-col bg-grey-1 rounded-md w-34 h-37 gap-1 text-sm flex-[0_0_135px]">
+                                    <img src="./public/images/png/category07.png" alt="category">
+                                    <span class="max-w-25.75 text-center">Столы</span>
+                                </a>
+                                <a href="##" class="flex justify-center items-center flex-col bg-grey-1 rounded-md w-34 h-37 gap-1 text-sm flex-[0_0_135px]">
+                                    <img src="./public/images/png/category08.png" alt="category">
+                                    <span class="max-w-25.75 text-center">Стулья</span>
+                                </a>
+                                <a href="##" class="flex justify-center items-center flex-col bg-grey-1 rounded-md w-34 h-37 gap-1 text-sm flex-[0_0_135px]">
+                                    <img src="./public/images/png/category09.png" alt="category">
+                                    <span class="max-w-25.75 text-center">Зеркала</span>
+                                </a>
+                                <a href="##" class="flex justify-center items-center flex-col bg-grey-1 rounded-md w-34 h-37 gap-1 text-sm flex-[0_0_135px]">
+                                    <img src="./public/images/png/category10.png" alt="category">
+                                    <span class="max-w-25.75 text-center">Комоды и тумбы</span>
+                                </a>
+                                <a href="##" class="flex justify-center items-center flex-col bg-grey-1 rounded-md w-34 h-37 gap-1 text-sm flex-[0_0_135px]">
+                                    <img src="./public/images/png/category11.png" alt="category">
+                                    <span class="max-w-25.75 text-center">Навесные полки</span>
+                                </a>
+                                <a href="##" class="flex justify-center items-center flex-col bg-grey-1 rounded-md w-34 h-37 gap-1 text-sm flex-[0_0_135px]">
+                                    <img src="./public/images/png/category12.png" alt="category">
+                                    <span class="max-w-25.75 text-center">Пуфы и банкетки</span>
+                                </a>
+                                <a href="##" class="flex justify-center items-center flex-col bg-grey-1 rounded-md w-34 h-37 gap-1 text-sm flex-[0_0_135px]">
+                                    <img src="./public/images/png/category13.png" alt="category">
+                                    <span class="max-w-25.75 text-center">Светильники</span>
+                                </a>
+                                <a href="##" class="flex justify-center items-center flex-col bg-grey-1 rounded-md w-34 h-37 gap-1 text-sm flex-[0_0_135px]">
+                                    <img src="./public/images/png/category14.png" alt="category">
+                                    <span class="max-w-25.75 text-center">Товары для сна</span>
+                                </a>
+                                <a href="##" class="flex justify-center items-center flex-col bg-grey-1 rounded-md w-34 h-37 gap-1 text-sm flex-[0_0_135px]">
+                                    <img src="./public/images/png/category15.png" alt="category">
+                                    <span class="max-w-25.75 text-center">Аксессуары и декор</span>
+                                </a>
+                            </div>
+                            <div class="bg-brown-light absolute top-14 -right-4 size-9 rounded-full flex items-center justify-center cursor-pointer" id="category-next" >
+                                <svg class="h-3 w-1.5">
+                                    <use
+                                        xlink:href="/sprites.svg#vector-right"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+                        
                     </div>
                 </section>
             </main>
