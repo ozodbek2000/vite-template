@@ -1,4 +1,4 @@
-<header class="h-22.5 z-3 bg-white">
+<header class="h-22.5 z-3 bg-white sticky top-0">
     <div class="container flex-between-center h-full">
         <a href="index.html" class="logo">
             <svg class="h-7.5 w-51">
@@ -9,19 +9,19 @@
             <ul class="flex-center gap-12 [&>li>a]:pb-2.5">
                 <li class="group">
                     <a
-                        class="group-hover:border-b-2 group-hover:border-red-2 pb-2.5"
+                        class="group-hover:border-b-2 group-hover:border-red-2 pb-2.5 "
                         href="##"
                         >Категории</a
                     >
                     <div
-                        class="bg-white absolute top-35 left-0 w-full pb-12 opacity-0 invisible transition-all ease-in-out duration-300 group-hover:opacity-100 group-hover:visible delay-150"
+                        class="bg-white absolute top-22.5 left-0 w-full pb-12 opacity-0 invisible transition-all ease-in-out duration-300 group-hover:opacity-100 group-hover:visible delay-150 "
                     >
-                        <div class="container overflow-hidden relative">
+                        <div class="container">
                             <ul
-                                class="flex gap-2 [&>li>a]:py-3.5 [&>li>a]:px-6 whitespace-nowrap [&>li>a]:border [&>li>a]:border-brown-light [&>li>a]:rounded-sm [&>li>a]:flex overflow-x-scroll pt-8 [&>li>a.active]:border-red-2"
+                                class="relative flex gap-2 [&>li>a]:py-3.5 [&>li>a]:px-6 whitespace-nowrap [&>li>a]:border [&>li>a]:border-brown-light [&>li>a]:rounded-sm [&>li>a]:flex overflow-x-scroll pt-8 [&>li>a.active]:border-red-2 category-list scroll-off"
                             >
                                 <div
-                                    class="bg-brown-light absolute top-10 right-3.75 size-9 rounded-full flex items-center justify-center cursor-pointer"
+                                    class="bg-brown-light absolute top-10 right-3.75 size-9 rounded-full flex items-center justify-center cursor-pointer category-next "
                                 >
                                     <svg class="h-3 w-1.5">
                                         <use
@@ -29,62 +29,67 @@
                                         />
                                     </svg>
                                 </div>
-                                <li class="">
+                                <li class="group/couch">
                                     <a class="active" href="##">Диваны</a>
+                                    {{>submenu title="Диваны" items=(array "Диваны модульные" "Диваны угловые" "Диваны прямые")}}
                                 </li>
-                                <li>
+                                <li class="group/couch">
                                     <a href="##">Кровати</a>
+                                    {{>submenu title="Кровати" items=(array "Кровати модульные" "Кровати угловые" "Кровати прямые")}}
                                 </li>
-                                <li>
+                                <li class="group/couch">
                                     <a href="##">Матрасы</a>
+                                    {{>submenu title="Матрасы" items=(array "Кровати модульные" "Кровати угловые" "Кровати прямые")}}
                                 </li>
-                                <li>
+                                <li class="group/couch">
                                     <a href="##">Кресла</a>
+                                    {{>submenu title="Кресла" items=(array "Кровати модульные" "Кровати угловые" "Кровати прямые")}}
                                 </li>
-                                <li>
+                                <li class="group/couch">
                                     <a href="##">Шкафы</a>
+                                    {{>submenu title="Шкафы" items=(array "Кровати модульные" "Кровати угловые" "Кровати прямые")}}
                                 </li>
-                                <li>
+                                <li class="group/couch">
                                     <a href="##">Вешалки</a>
+                                    {{>submenu title="Вешалки" items=(array "Кровати модульные" "Кровати угловые" "Кровати прямые")}}
                                 </li>
-                                <li>
+                                <li class="group/couch">
                                     <a href="##">Столы</a>
+                                    {{>submenu title="Столы" items=(array "Кровати модульные" "Кровати угловые" "Кровати прямые")}}
                                 </li>
-                                <li>
+                                <li class="group/couch">
                                     <a href="##">Стулья</a>
+                                    {{>submenu title="Стулья" items=(array "Кровати модульные" "Кровати угловые" "Кровати прямые")}}
                                 </li>
-                                <li>
+                                <li class="group/couch">
                                     <a href="##">Зеркала</a>
+                                    {{>submenu title="Зеркала" items=(array "Кровати модульные" "Кровати угловые" "Кровати прямые")}}
                                 </li>
-                                <li>
+                                <li class="group/couch">
                                     <a href="##">Комоды и тумбы</a>
+                                    {{>submenu title="Комоды и тумбы" items=(array "Кровати модульные" "Кровати угловые" "Кровати прямые")}}
                                 </li>
-                                <li>
+                                <li class="group/couch">
                                     <a href="##">Навесные полки</a>
+                                    {{>submenu title="Навесные полки" items=(array "Кровати модульные" "Кровати угловые" "Кровати прямые")}}
                                 </li>
-                                <li>
+                                <li class="group/couch">
                                     <a href="##">Пуфы и банкетки</a>
+                                    {{>submenu title="Пуфы и банкетки" items=(array "Кровати модульные" "Кровати угловые" "Кровати прямые")}}
                                 </li>
-                                <li>
+                                <li class="group/couch">
                                     <a href="##">Светильники</a>
+                                    {{>submenu title="Светильники" items=(array "Кровати модульные" "Кровати угловые" "Кровати прямые")}}
                                 </li>
-                                <li>
+                                <li class="group/couch">
                                     <a href="##">Товары для сна</a>
+                                    {{>submenu title="Товары для сна" items=(array "Кровати модульные" "Кровати угловые" "Кровати прямые")}}
                                 </li>
-                                <li>
+                                <li class="group/couch">
                                     <a href="##">Аксессуары и декор</a>
+                                    {{>submenu title="Пуфы и банкетки" items=(array "Кровати модульные" "Кровати угловые" "Кровати прямые")}}
                                 </li>
                             </ul>
-                            <div class="mt-8 flex gap-32">
-                                <h3 class="text-2xl font-semibold">Диваны</h3>
-                                <ul
-                                    class="flex flex-col gap-7 [&>li>a]:text-sm"
-                                >
-                                    <li><a href="##">Диваны модульные</a></li>
-                                    <li><a href="##">Диваны угловые</a></li>
-                                    <li><a href="##">Диваны прямые</a></li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
                 </li>
@@ -95,7 +100,7 @@
                         >Помещения</a
                     >
                     <div
-                        class="bg-white absolute top-35 left-0 w-full pb-12 opacity-0 invisible transition-all ease-in-out group-hover:opacity-100 group-hover:visible delay-150"
+                        class="bg-white absolute top-22.5 left-0 w-full pb-12 opacity-0 invisible transition-all ease-in-out group-hover:opacity-100 group-hover:visible delay-150"
                     >
                         <div class="container overflow-hidden relative flex">
                             <h3 class="font-semibold text-2xl flex-[0_1_346px]">
@@ -239,7 +244,7 @@
                         >Бренды</a
                     >
                     <div
-                        class="bg-white absolute top-35 left-0 w-full pb-12 opacity-0 invisible transition-all ease-in-out group-hover:opacity-100 group-hover:visible pt-8 delay-150"
+                        class="bg-white absolute top-22.5 left-0 w-full pb-12 opacity-0 invisible transition-all ease-in-out group-hover:opacity-100 group-hover:visible pt-8 delay-150"
                     >
                         <div class="container overflow-hidden">
                             <ul class="flex gap-6">

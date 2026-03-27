@@ -1,0 +1,12 @@
+<div
+    class="absolute left-0 top-33.5 bg-white w-screen opacity-0 invisible group-hover/couch:opacity-100 group-hover/couch:visible transition-all duration-200 delay-150 pb-13"
+>
+    <div class="container flex gap-32">
+        <h3 class="text-2xl font-semibold">{{title}}</h3>
+        <ul class="flex flex-col gap-7 [&>li>a]:text-sm">
+            {{#each items}}
+                <li><a href="##">{{this}}</a></li>
+            {{/each}}
+        </ul>
+    </div>
+</div>

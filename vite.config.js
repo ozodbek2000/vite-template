@@ -12,9 +12,6 @@ export default defineConfig({
                 eq: (a, b) => a === b,
                 // {{#if (eq @index 0)}}active{{/if}}
             },
-            context: {
-                list: ["Item 1", "Item 1"],
-            },
             // {{#each list}}
             // <div>{{this}}</div>
             // {{/each}}

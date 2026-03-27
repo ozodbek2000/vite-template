@@ -1,9 +1,7 @@
-const categoryList = document.getElementById('category-list');
-const nextBtn = document.getElementById('category-next');
-
-nextBtn.addEventListener('click', () => {
-    categoryList.scrollBy({
-        left: 300,
-        behavior: 'smooth'
+document.querySelectorAll('.category-next').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const container = btn.closest('.container');
+        const list = container.querySelector('.category-list');
+        list.scrollBy({ left: 300, behavior: 'smooth' });
     });
 });

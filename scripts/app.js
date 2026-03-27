@@ -6,14 +6,22 @@ import "./swiper.js"
 import "./toggle.js"
 
 document.addEventListener("DOMContentLoaded", () => {
-    /* Set scrollbar size */
-    const scrollbarSize =
-        window.innerWidth - document.documentElement.clientWidth;
 
-    document.documentElement.style.setProperty(
-        "--scrollbar-size",
-        `${scrollbarSize}px`
-    );
+
+    
+    /* Set scrollbar size */
+
+    function handleScrollbarSize() {
+        const scrollbarSize = window.innerWidth - document.documentElement.clientWidth;
+
+        document.documentElement.style.setProperty("--scrollbar-size", `${scrollbarSize}px`);
+    }
+    handleScrollbarSize();
+
+    window.addEventListener("resize", function () {
+        handleScrollbarSize();
+    });
+
     /* Set scrollbar size end */
 
     /* Header */
