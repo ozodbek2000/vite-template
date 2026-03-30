@@ -1,112 +1,325 @@
-<header class="h-22.5 z-3 bg-white sticky top-0">
-    <div class="container flex-between-center h-full">
+<header class="h-22.5 z-3 bg-white sticky top-0 max-sm:h-37 max-sm:pt-6">
+    <div class="container flex-between-center max-sm:flex-wrap max-sm:gap-y-5.5 sm:h-full">
         <a href="index.html" class="logo">
-            <svg class="h-7.5 w-51">
+            <svg class="h-7.5 w-51 max-sm:max-w-40.75">
                 <use xlink:href="/sprites.svg#logo" />
             </svg>
         </a>
-        <nav class="ml-auto pr-18">
-            <ul class="flex-center gap-12 [&>li>a]:pb-2.5">
-                <li class="group">
+        <nav class="ml-auto pr-18 max-sm:fixed z-1">
+            <ul class="flex-center gap-12 [&>li>a]:pb-2.5 max-md:fixed max-md:bottom-0 max-md:left-0 max-sm:px-4 max-sm:gap-0 max-sm:w-full max-sm:bg-white max-sm:justify-between max-md:pt-3">
+                <li class="group max-sm:max-w-14.5">
                     <a
-                        class="group-hover:border-b-2 group-hover:border-red-2 pb-2.5 "
+                        class="group-hover:border-b-2 group-hover:border-red-2 pb-2.5 max-sm:flex max-sm:flex-col max-sm:gap-1.5 max-sm:items-center"
                         href="##"
-                        >Категории</a
+                        >
+                        <div class="h-7 w-14.5 flex items-center justify-center sm:hidden">
+                            <svg class="h-3 w-4.5">
+                                <use xlink:href="/sprites.svg#category" />
+                            </svg>
+                        </div>
+                        <span class="max-sm:text-[10px] text-sm">Категории</span></a
                     >
                     <div
-                        class="bg-white absolute top-22.5 left-0 w-full pb-12 opacity-0 invisible transition-all ease-in-out duration-300 group-hover:opacity-100 group-hover:visible delay-150 "
+                        class="bg-white absolute top-22.5 left-0 w-full pb-12 opacity-0 invisible transition-all ease-in-out duration-300 group-hover:opacity-100 group-hover:visible md:delay-150 max-sm:fixed max-sm:-left-full max-sm:top-0 [&.active]:left-0 [&.active]:opacity-100 [&.active]:visible [&.active]:p-0 "
                     >
-                        <div class="container">
+                        <div class="md:container">
                             <ul
-                                class="relative flex gap-2 [&>li>a]:py-3.5 [&>li>a]:px-6 whitespace-nowrap [&>li>a]:border [&>li>a]:border-brown-light [&>li>a]:rounded-sm [&>li>a]:flex overflow-x-scroll pt-8 [&>li>a.active]:border-red-2 category-list scroll-off"
+                                class=" flex md:gap-2 [&>li>a]:py-3.5 max-md:[&>li>a]:py-3.75 [&>li>a]:px-6 whitespace-nowrap md:[&>li>a]:border max-md:[&>li>a]:border-b ] [&>li>a]:border-brown-light md:[&>li>a]:rounded-sm [&>li>a]:flex overflow-x-scroll md:pt-8 md:[&>li>a.active]:border-red-2 category-list scroll-off max-sm:flex-col md:overflow-y-auto max-md:h-screen"
                             >
-                                <div
-                                    class="bg-brown-light absolute top-10 right-3.75 size-9 rounded-full flex items-center justify-center cursor-pointer category-next "
-                                >
-                                    <svg class="h-3 w-1.5">
-                                        <use
-                                            xlink:href="/sprites.svg#vector-right"
-                                        />
-                                    </svg>
+                                <div class="flex items-center justify-between flex-[0_0_74px] px-4 md:hidden">
+                                    <div></div>
+                                    <h3 class="group/couch">
+                                        <span class="">Категории</span>
+                                    </h3>
+                                    <div>
+                                        <svg class="size-6 close">
+                                            <use
+                                                xlink:href="/sprites.svg#close"
+                                            />
+                                        </svg>
+                                    </div>
                                 </div>
                                 <li class="group/couch">
-                                    <a class="active" href="##">Диваны</a>
+                                    <a class="active flex items-center gap-6" href="##">
+                                        <svg class="size-10.5 md:hidden">
+                                            <use
+                                                xlink:href="/sprites.svg#category01"
+                                            />
+                                        </svg>
+                                        <span class="mr-auto">Диваны</span>
+                                        <svg class="size-6 md:hidden">
+                                            <use
+                                                xlink:href="/sprites.svg#arrow-right"
+                                            />
+                                        </svg>
+                                    </a>
                                     {{>submenu title="Диваны" items=(array "Диваны модульные" "Диваны угловые" "Диваны прямые")}}
                                 </li>
                                 <li class="group/couch">
-                                    <a href="##">Кровати</a>
+                                    <a class="flex items-center gap-6" href="##">
+                                        <svg class="size-10.5 md:hidden">
+                                            <use
+                                                xlink:href="/sprites.svg#category02"
+                                            />
+                                        </svg>
+                                        <span class="mr-auto" >Кровати</span>
+                                        <svg class="size-6 md:hidden">
+                                            <use
+                                                xlink:href="/sprites.svg#arrow-right"
+                                            />
+                                        </svg>
+                                    </a>
                                     {{>submenu title="Кровати" items=(array "Кровати модульные" "Кровати угловые" "Кровати прямые")}}
                                 </li>
                                 <li class="group/couch">
-                                    <a href="##">Матрасы</a>
+                                    <a class="flex items-center gap-6" href="##">
+                                        <svg class="size-10.5 md:hidden">
+                                            <use
+                                                xlink:href="/sprites.svg#category03"
+                                            />
+                                        </svg>
+                                        <span class="mr-auto" >Матрасы</span>
+                                        <svg class="size-6 md:hidden">
+                                            <use
+                                                xlink:href="/sprites.svg#arrow-right"
+                                            />
+                                        </svg>
+                                    </a>
                                     {{>submenu title="Матрасы" items=(array "Кровати модульные" "Кровати угловые" "Кровати прямые")}}
                                 </li>
                                 <li class="group/couch">
-                                    <a href="##">Кресла</a>
+                                    <a class="flex items-center gap-6" href="##">
+                                        <svg class="size-10.5 md:hidden">
+                                            <use
+                                                xlink:href="/sprites.svg#category04"
+                                            />
+                                        </svg>
+                                        <span class="mr-auto" >Кресла</span>
+                                        <svg class="size-6 md:hidden">
+                                            <use
+                                                xlink:href="/sprites.svg#arrow-right"
+                                            />
+                                        </svg>
+                                    </a>
                                     {{>submenu title="Кресла" items=(array "Кровати модульные" "Кровати угловые" "Кровати прямые")}}
                                 </li>
                                 <li class="group/couch">
-                                    <a href="##">Шкафы</a>
+                                    <a class="flex items-center gap-6" href="##">
+                                        <svg class="size-10.5 md:hidden">
+                                            <use
+                                                xlink:href="/sprites.svg#category05"
+                                            />
+                                        </svg>
+                                        <span class="mr-auto" >Шкафы</span>
+                                        <svg class="size-6 md:hidden">
+                                            <use
+                                                xlink:href="/sprites.svg#arrow-right"
+                                            />
+                                        </svg>
+                                    </a>
                                     {{>submenu title="Шкафы" items=(array "Кровати модульные" "Кровати угловые" "Кровати прямые")}}
                                 </li>
                                 <li class="group/couch">
-                                    <a href="##">Вешалки</a>
+                                    <a class="flex items-center gap-6" href="##">
+                                        <svg class="size-10.5 md:hidden">
+                                            <use
+                                                xlink:href="/sprites.svg#category06"
+                                            />
+                                        </svg>
+                                        <span class="mr-auto" >Вешалки</span>
+                                        <svg class="size-6 md:hidden">
+                                            <use
+                                                xlink:href="/sprites.svg#arrow-right"
+                                            />
+                                        </svg>
+                                    </a>
                                     {{>submenu title="Вешалки" items=(array "Кровати модульные" "Кровати угловые" "Кровати прямые")}}
                                 </li>
                                 <li class="group/couch">
-                                    <a href="##">Столы</a>
+                                    <a class="flex items-center gap-6" href="##">
+                                        <svg class="size-10.5 md:hidden">
+                                            <use
+                                                xlink:href="/sprites.svg#category07"
+                                            />
+                                        </svg>
+                                        <span class="mr-auto" >Столы</span>
+                                        <svg class="size-6 md:hidden">
+                                            <use
+                                                xlink:href="/sprites.svg#arrow-right"
+                                            />
+                                        </svg>
+                                    </a>
                                     {{>submenu title="Столы" items=(array "Кровати модульные" "Кровати угловые" "Кровати прямые")}}
                                 </li>
                                 <li class="group/couch">
-                                    <a href="##">Стулья</a>
+                                    <a class="flex items-center gap-6" href="##">
+                                        <svg class="size-10.5 md:hidden">
+                                            <use
+                                                xlink:href="/sprites.svg#category08"
+                                            />
+                                        </svg>
+                                        <span class="mr-auto" >Стулья</span>
+                                        <svg class="size-6 md:hidden">
+                                            <use
+                                                xlink:href="/sprites.svg#arrow-right"
+                                            />
+                                        </svg>
+                                    </a>
                                     {{>submenu title="Стулья" items=(array "Кровати модульные" "Кровати угловые" "Кровати прямые")}}
                                 </li>
                                 <li class="group/couch">
-                                    <a href="##">Зеркала</a>
+                                    <a class="flex items-center gap-6" href="##">
+                                        <svg class="size-10.5 md:hidden">
+                                            <use
+                                                xlink:href="/sprites.svg#category09"
+                                            />
+                                        </svg>
+                                        <span class="mr-auto" >Зеркала</span>
+                                        <svg class="size-6 md:hidden">
+                                            <use
+                                                xlink:href="/sprites.svg#arrow-right"
+                                            />
+                                        </svg>
+                                    </a>
                                     {{>submenu title="Зеркала" items=(array "Кровати модульные" "Кровати угловые" "Кровати прямые")}}
                                 </li>
                                 <li class="group/couch">
-                                    <a href="##">Комоды и тумбы</a>
+                                    <a class="flex items-center gap-6" href="##">
+                                        <svg class="size-10.5 md:hidden">
+                                            <use
+                                                xlink:href="/sprites.svg#category10"
+                                            />
+                                        </svg>
+                                        <span class="mr-auto" >Комоды и тумбы</span>
+                                        <svg class="size-6 md:hidden">
+                                            <use
+                                                xlink:href="/sprites.svg#arrow-right"
+                                            />
+                                        </svg>
+                                    </a>
                                     {{>submenu title="Комоды и тумбы" items=(array "Кровати модульные" "Кровати угловые" "Кровати прямые")}}
                                 </li>
                                 <li class="group/couch">
-                                    <a href="##">Навесные полки</a>
+                                    <a class="flex items-center gap-6" href="##">
+                                        <svg class="size-10.5 md:hidden">
+                                            <use
+                                                xlink:href="/sprites.svg#category11"
+                                            />
+                                        </svg>
+                                        <span class="mr-auto" >Навесные полки</span>
+                                        <svg class="size-6 md:hidden">
+                                            <use
+                                                xlink:href="/sprites.svg#arrow-right"
+                                            />
+                                        </svg>
+                                    </a>
                                     {{>submenu title="Навесные полки" items=(array "Кровати модульные" "Кровати угловые" "Кровати прямые")}}
                                 </li>
                                 <li class="group/couch">
-                                    <a href="##">Пуфы и банкетки</a>
+                                    <a class="flex items-center gap-6" href="##">
+                                        <svg class="size-10.5 md:hidden">
+                                            <use
+                                                xlink:href="/sprites.svg#category12"
+                                            />
+                                        </svg>
+                                        <span class="mr-auto" >Пуфы и банкетки</span>
+                                        <svg class="size-6 md:hidden">
+                                            <use
+                                                xlink:href="/sprites.svg#arrow-right"
+                                            />
+                                        </svg>
+                                    </a>
                                     {{>submenu title="Пуфы и банкетки" items=(array "Кровати модульные" "Кровати угловые" "Кровати прямые")}}
                                 </li>
                                 <li class="group/couch">
-                                    <a href="##">Светильники</a>
+                                    <a class="flex items-center gap-6" href="##">
+                                        <svg class="size-10.5 md:hidden">
+                                            <use
+                                                xlink:href="/sprites.svg#category13"
+                                            />
+                                        </svg>
+                                        <span class="mr-auto" >Светильники</span>
+                                        <svg class="size-6 md:hidden">
+                                            <use
+                                                xlink:href="/sprites.svg#arrow-right"
+                                            />
+                                        </svg>
+                                    </a>
                                     {{>submenu title="Светильники" items=(array "Кровати модульные" "Кровати угловые" "Кровати прямые")}}
                                 </li>
                                 <li class="group/couch">
-                                    <a href="##">Товары для сна</a>
+                                    <a class="flex items-center gap-6" href="##">
+                                        <svg class="size-10.5 md:hidden">
+                                            <use
+                                                xlink:href="/sprites.svg#category14"
+                                            />
+                                        </svg>
+                                        <span class="mr-auto" >Товары для сна</span>
+                                        <svg class="size-6 md:hidden">
+                                            <use
+                                                xlink:href="/sprites.svg#arrow-right"
+                                            />
+                                        </svg>
+                                    </a>
                                     {{>submenu title="Товары для сна" items=(array "Кровати модульные" "Кровати угловые" "Кровати прямые")}}
                                 </li>
                                 <li class="group/couch">
-                                    <a href="##">Аксессуары и декор</a>
+                                    <a class="flex items-center gap-6" href="##">
+                                        <svg class="size-10.5 md:hidden">
+                                            <use
+                                                xlink:href="/sprites.svg#category15"
+                                            />
+                                        </svg>
+                                        <span class="mr-auto" >Аксессуары и декор</span>
+                                        <svg class="size-6 md:hidden">
+                                            <use
+                                                xlink:href="/sprites.svg#arrow-right"
+                                            />
+                                        </svg>
+                                    </a>
                                     {{>submenu title="Пуфы и банкетки" items=(array "Кровати модульные" "Кровати угловые" "Кровати прямые")}}
                                 </li>
                             </ul>
+                            <div class="bg-brown-light absolute top-10 right-3.75 size-9 rounded-full flex items-center justify-center cursor-pointer category-next max-md:hidden" >
+                                <svg class="h-3 w-1.5">
+                                    <use
+                                        xlink:href="/sprites.svg#vector-right"
+                                    />
+                                </svg>
+                            </div>
                         </div>
                     </div>
                 </li>
-                <li class="group">
+                <li class="group max-sm:max-w-14.5">
                     <a
-                        class="group-hover:border-b-2 group-hover:border-red-2 pb-2.5"
+                        class="group-hover:border-b-2 group-hover:border-red-2 pb-2.5 max-sm:flex max-sm:flex-col max-sm:gap-1.5 max-sm:items-center"
                         href="##"
-                        >Помещения</a
+                        >
+                        <div class="h-7 w-14.5 flex items-center justify-center sm:hidden">
+                            <svg class="h-3 w-4.5">
+                                <use xlink:href="/sprites.svg#sofa" />
+                            </svg>
+                        </div>
+                        <span class="max-sm:text-[10px] text-sm" >Помещения</span></a
                     >
                     <div
-                        class="bg-white absolute top-22.5 left-0 w-full pb-12 opacity-0 invisible transition-all ease-in-out group-hover:opacity-100 group-hover:visible delay-150"
+                        class="bg-white absolute top-22.5 left-0 w-full pb-12 opacity-0 invisible transition-all ease-in-out group-hover:opacity-100 group-hover:visible md:delay-150 max-sm:fixed max-sm:-left-full max-sm:top-0 [&.active]:left-0 [&.active]:opacity-100 [&.active]:visible max-md:h-screen max-md:overflow-auto"
                     >
-                        <div class="container overflow-hidden relative flex">
-                            <h3 class="font-semibold text-2xl flex-[0_1_346px]">
-                                Помещения
-                            </h3>
-                            <ul class="flex gap-6">
+                        <div class="container overflow-hidden relative flex max-md:flex-col max-md:p-0">
+                            <div class="flex items-center justify-between flex-[0_0_74px] md:px-4 md:hidden">
+                                <div></div>
+                                <h3 class="font-semibold text-2xl max-md:text-[16px]">
+                                    Помещения
+                                </h3>
+                                <div>
+                                    <svg class="size-6 close md:hidden">
+                                        <use
+                                            xlink:href="/sprites.svg#close"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                            <ul class="flex gap-6 max-md:grid-cols-2 max-md:grid max-md:gap-x-3.75 max-md:gap-y-8">
                                 <li class="">
                                     <a class="flex flex-col gap-3" href="##">
                                         <div>
@@ -239,9 +452,16 @@
                 </li>
                 <li class="group">
                     <a
-                        class="group-hover:border-b-2 group-hover:border-red-2 pb-2.5"
+                        class="group-hover:border-b-2 group-hover:border-red-2 pb-2.5 max-sm:flex max-sm:flex-col max-sm:gap-1.5 max-sm:items-center"
                         href="##"
-                        >Бренды</a
+                        >
+                        <div class="h-7 w-14.5 flex items-center justify-center sm:hidden">
+                            <svg class="size-4.75">
+                                <use xlink:href="/sprites.svg#medal" />
+                            </svg>
+                        </div>
+                        <span class="max-sm:text-[10px] text-sm" >Бренды</span>
+                        </a
                     >
                     <div
                         class="bg-white absolute top-22.5 left-0 w-full pb-12 opacity-0 invisible transition-all ease-in-out group-hover:opacity-100 group-hover:visible pt-8 delay-150"
@@ -306,31 +526,48 @@
                         </div>
                     </div>
                 </li>
+                <li class="group sm:hidden">
+                    <a
+                        class="group-hover:border-b-2 group-hover:border-red-2 pb-2.5 max-sm:flex max-sm:flex-col max-sm:gap-1.5 max-sm:items-center"
+                        href="##"
+                        >
+                        <div class="h-7 w-14.5 flex items-center justify-center sm:hidden">
+                            <svg class="size-5">
+                                <use xlink:href="/sprites.svg#tag" />
+                            </svg>
+                        </div>
+                        <span class="max-sm:text-[10px]" >Акции</span>
+                        </a
+                    >
+                </li>
             </ul>
         </nav>
-        <div class="w-full max-w-142.5 mr-12">
+        <div class="w-full max-w-142.5 mr-12 max-sm:order-last max-sm:mr-0 max-sm:basis-full">
             <input
-                class="px-4 h-12 bg-grey-1 w-full flex items-center rounded-4xl"
+                class="px-14 h-12 bg-grey-1 w-full flex items-center rounded-4xl bg-[url(./public/svg/search.svg)] bg-no-repeat bg-position-[16px]"
                 type="search"
                 placeholder="Поиск"
             />
         </div>
-        <div class="flex-center gap-3">
-            <a class="size-10 flex items-center justify-center" href="##">
+        <div class="flex-center gap-3 max-sm:gap-1.5">
+            <a class="size-10 max-sm:size-8 flex items-center justify-center" href="##">
                 <svg class="size-6">
                     <use xlink:href="/sprites.svg#user" />
                 </svg>
             </a>
-            <a class="size-10 flex items-center justify-center" href="##">
+            <a class="size-10 max-sm:size-8 flex items-center justify-center" href="##">
                 <svg class="size-6">
                     <use xlink:href="/sprites.svg#heart" />
                 </svg>
             </a>
-            <a class="size-10 flex items-center justify-center" href="##">
+            <a class="size-10 max-sm:size-8 flex items-center justify-center" href="##">
                 <svg class="size-6">
                     <use xlink:href="/sprites.svg#bag" />
                 </svg>
             </a>
+            <div class="header-burger sm:hidden">
+                <span></span>
+            </div>
         </div>
     </div>
 </header>

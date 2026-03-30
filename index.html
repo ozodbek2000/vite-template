@@ -9,9 +9,9 @@
     <body>
         <div class="root">
             
-            <div class="bg-brown text-white relative z-3">
+            <div class="bg-brown text-white relative z-3 max-sm:text-sm">
                 <div class="container flex-between-center h-12.5">
-                    <div class="flex gap-2 cursor-pointer">
+                    <div class="flex items-center gap-2 cursor-pointer">
                         <svg class="size-6 ">
                             <use xlink:href="/sprites.svg#globe"/>
                         </svg>
@@ -27,7 +27,7 @@
                 <section class="main py-3.5">
                     <div class="container">
                         <div class="flex gap-5">
-                            <div class="collection swiper-container min-w-0 overflow-hidden flex-[0_1_50%] rounded-md relative">
+                            <div class="collection swiper-container min-w-0 overflow-hidden flex-[0_1_50%] rounded-md relative max-sm:hidden">
                                 <div class="swiper-wrapper inline-flex">
                                     <div class="swiper-slide">
                                         <img class="rounded-md" src="./public/images/jpg/banner01.jpg" alt="banner">
@@ -46,7 +46,7 @@
                                     <div class="collection-pagination text-center"></div>
                                 </div>
                             </div>
-                            <div class="discount swiper-container min-w-0 overflow-hidden flex-[0_1_50%] rounded-md relative">
+                            <div class="discount swiper-container min-w-0 overflow-hidden flex-[0_1_50%] rounded-md relative max-sm:flex-[1_1_100%]">
                                 <div class="swiper-wrapper inline-flex">
                                     <div class="swiper-slide">
                                         <img class="rounded-md" src="./public/images/jpg/banner02.jpg" alt="banner">
@@ -67,7 +67,7 @@
                             </div>
                         </div>
                         <div class="relative">
-                            <div class="flex items-center gap-4.25 mt-12 whitespace-nowrap overflow-x-auto scroll-off relative category-list">
+                            <div class="flex items-center gap-4.25 mt-12 max-sm:mt-8 whitespace-nowrap overflow-x-auto scroll-off relative category-list max-sm:-mx-4 max-sm:px-4">
                                 <a href="##" class="flex items-center flex-col bg-grey-1 rounded-md w-34 h-37 gap-1 text-sm flex-[0_0_135px] pt-6 ">
                                     <img src="./public/images/png/category01.png" alt="category">
                                     <span class="max-w-25.75 text-center text-wrap">Диваны</span>
@@ -129,7 +129,7 @@
                                     <span class="max-w-25.75 text-center text-wrap">Аксессуары и декор</span>
                                 </a>
                             </div>
-                            <div class="bg-brown-light absolute top-14 -right-4 size-9 rounded-full flex items-center justify-center cursor-pointer category-next"  >
+                            <div class="bg-brown-light absolute top-14 -right-4 size-9 rounded-full flex items-center justify-center cursor-pointer category-next max-sm:hidden"  >
                                 <svg class="h-3 w-1.5">
                                     <use
                                         xlink:href="/sprites.svg#vector-right"
@@ -142,7 +142,7 @@
                 </section>
             </main>
 
-            {{>footer}}
+            <!-- {{>footer}} -->
         </div>
         <script type="module" src="/scripts/app.js"></script>
     </body>

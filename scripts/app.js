@@ -4,6 +4,7 @@ import "/styles/app.css";
 import "./custom-components.js";
 import "./swiper.js"
 import "./toggle.js"
+import "./btnPos.js"
 
 document.addEventListener("DOMContentLoaded", () => {
 
