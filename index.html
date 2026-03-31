@@ -11,7 +11,7 @@
             
             <div class="bg-brown text-white relative z-3 max-sm:text-sm">
                 <div class="container flex-between-center h-12.5">
-                    <div class="flex items-center gap-2 cursor-pointer">
+                    <div class="flex items-center gap-2 cursor-pointer popup-open">
                         <svg class="size-6 ">
                             <use xlink:href="/sprites.svg#globe"/>
                         </svg>
@@ -19,6 +19,31 @@
                     </div>
                     <div class=""><a href="##">Магазины</a></div>
                 </div>
+            </div>
+
+            <div class="max-w-119.5 bg-white px-8 py-6 fixed top-0 [&.active]:left-0 z-99 h-screen opacity-0 invisible [&.active]:visible [&.active]:opacity-100 transition-300 -left-full">
+
+                <div class="">
+                    <svg class="size-6 close ml-auto close-popup cursor-pointer">
+                        <use
+                            xlink:href="/sprites.svg#close"
+                        />
+                    </svg>
+                </div>
+                <h3 class="text-[24px] font-bold mt-6">
+                    Выберите предпочтительный язык
+                </h3>
+                <div class="flex items-center gap-3 text-sm mt-6 mb-18">
+                    <div class="h-10 p-3 bg-grey-1 rounded-[100px] flex items-center justify-center cursor-pointer">
+                        Русский
+                    </div>
+                    <div class="h-10 p-3 rounded-[100px] flex items-center justify-center border border-black font-bold cursor-pointer">
+                        O'zbek
+                    </div>
+                </div>
+
+                <a class="main-btn close-popup" href="##">Закрыть</a>
+
             </div>
 
             {{>header}}
@@ -143,6 +168,7 @@
             </main>
 
             <!-- {{>footer}} -->
+            {{>overlays}}
         </div>
         <script type="module" src="/scripts/app.js"></script>
     </body>

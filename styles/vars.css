@@ -12,7 +12,7 @@
     --color-bordo: #440707;
     --color-brown: #a19289;
     --color-brown-light: #ded9d5;
-    --color-brown-pink: #f5dedf;
+    --color-pink: #f5dedf;
 }
 
 :root {
@@ -153,22 +153,21 @@
 }
 
 @utility disabled-btn {
-    --btn-bg-color: var(--color-gray) !important;
-    --btn-text-color: var(--color-secondary) !important;
-    --btn-border-color: var(--color-gray) !important;
     pointer-events: none;
 }
 
 @utility main-btn {
-    @apply custom-btn;
-    --btn-text-color: var(--color-white);
-    --btn-bg-color: var(--color-main);
-    --btn-border-color: var(--color-main);
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background: var(--color-brown);
+    color: #fff;
+    
     &.active,
     &:hover {
-        --btn-text-color: var(--color-white) !important;
-        --btn-bg-color: var(--color-primary);
-        --btn-border-color: var(--color-primary);
+        
     }
     &:disabled {
         @apply disabled-btn;
