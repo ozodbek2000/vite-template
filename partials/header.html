@@ -573,23 +573,30 @@
                 </li>
             </ul>
         </nav>
-        <div class="w-full max-w-150.5 mr-12 max-sm:order-last max-sm:mr-0 max-sm:basis-full relative  h-full flex items-center bg-white rounded-tl-md rounded-tr-md md:px-4">
+        <div class="w-full max-w-150.5 mr-12 max-sm:order-last max-sm:mr-0 max-sm:basis-full relative  md:h-full flex items-center bg-white rounded-tl-md rounded-tr-md md:px-4 max-md:[&:has(input:focus)]:absolute max-md:[&:has(input:focus)]:-top-12.5 max-md:[&:has(input:focus)]:left-0 max-md:[&:has(input:focus)]:gap-4 max-md:[&:has(input:focus)]:p-4 max-md:[&:has(input:focus)]:rounded-none">
+            <div class="opacity-0 invisible size-0 max-md:[&:has(~input:focus)]:opacity-100 max-md:[&:has(~input:focus)]:visible max-md:[&:has(~input:focus)]:size-auto">
+                <svg class="size-6 relative">
+                    <use
+                        xlink:href="/sprites.svg#arrow-left "
+                    />
+                </svg>
+            </div>
             <input
                 class="peer focus:bg-white focus:border-red border-grey-1 border outline-0 px-14 h-12 bg-grey-1 w-full flex items-center rounded-4xl bg-[url(./public/svg/search.svg)] focus:bg-[url(./public/svg/search-black.svg)] bg-no-repeat bg-position-[16px] focus:bg-position-[calc(100%-24px)] focus:px-4"
                 type="search"
                 placeholder="Поиск"
             />
-            <div class="opacity-0 invisible peer-focus:opacity-100 peer-focus-within:visible cursor-pointer absolute right-20 top-8">
+            <div class="opacity-0 invisible peer-focus:opacity-100 peer-focus-within:visible cursor-pointer absolute right-20 md:top-8">
                 <svg class="size-6 relative">
                     <use
                         xlink:href="/sprites.svg#close"
                     />
                 </svg>
-                <div class="absolute w-0.5 h-6 bg-grey-1 top-0 -right-4"></div>
+                <div class="absolute w-0.5 h-6 bg-grey-1 top-0 -right-2"></div>
             </div>
-            <div class="opacity-0 invisible peer-focus:opacity-100 peer-focus:visible absolute top-full left-0 p-4 bg-white w-full z-10 shadow-lg transition-300 rounded-bl-md rounded-br-md">
-                <h3>Популярные бренды</h3>
-                <div class="flex flex-wrap gap-3">
+            <div class="opacity-0 invisible peer-focus:opacity-100 peer-focus:visible [.peer:focus:not(:placeholder-shown)~&]:opacity-0! [.peer:focus:not(:placeholder-shown)~&]:invisible! absolute top-full left-0 p-4 pt-2 bg-white w-full z-10 shadow-lg transition-300 rounded-bl-md rounded-br-md">
+                <h3 class="text-sm text-grey-3 mb-6">Популярные бренды</h3>
+                <div class="flex flex-wrap gap-3 [&>span]:flex [&>span]:items-center [&>span]:justify-center [&>span]:px-4.5 [&>span]:bg-grey-1 [&>span]:rounded-[50px] [&>span]:h-9.25 peer:focus:not(:placeholder-shown)~&]:opacity-0 peer:focus:not(:placeholder-shown)~&]:invisible">
                     <span>Enza home</span>
                     <span>Aero</span>
                     <span>Kupidivan</span>
@@ -597,6 +604,28 @@
                     <span>mamadoma</span>
                     <span>шатура</span>
                     <span>Progress</span>
+                </div>
+            </div>
+            <div class="opacity-0 [.peer:focus:not(:placeholder-shown)~&]:opacity-100 [.peer:focus:not(:placeholder-shown)~&]:visible invisible absolute top-full left-0 p-4 pt-2 bg-white w-full z-10 shadow-lg transition-300 rounded-bl-md rounded-br-md max-md:pl-14">
+                <div class="flex flex-col gap-6">
+                    <div class="flex items-center gap-4">
+                        <svg class="size-6">
+                            <use xlink:href="/sprites.svg#search-black" />
+                        </svg>
+                        <span>кресло</span>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <svg class="size-6">
+                            <use xlink:href="/sprites.svg#search-black" />
+                        </svg>
+                        <span>кресло</span>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <svg class="size-6">
+                            <use xlink:href="/sprites.svg#search-black" />
+                        </svg>
+                        <span>кресло</span>
+                    </div>
                 </div>
             </div>
             <div class="peer-focus:opacity-100 peer-focus:visible -z-1 fixed top-0 left-0 w-full h-full bg-[#00000081] opacity-0 invisible transition-all ease-in-out duration-300"></div>

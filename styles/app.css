@@ -17,7 +17,6 @@ html {
     }
 }
 
-
 body {
     scroll-behavior: smooth;
     overflow-x: clip;
@@ -485,8 +484,10 @@ button {
     height: 32px;
     cursor: pointer;
 
-    &::after, &::before, span{
-        content: '';
+    &::after,
+    &::before,
+    span {
+        content: "";
         position: absolute;
         width: 16px;
         height: 2px;
@@ -500,7 +501,7 @@ button {
         bottom: 8px;
     }
     span {
-       top: calc(50% - 0px); 
+        top: calc(50% - 0px);
     }
 }
 input[type="search"] {
@@ -515,5 +516,10 @@ input[type="search"] {
 input[type="search"]::-webkit-search-cancel-button {
     -webkit-appearance: none;
     display: none;
-  }
-  
+}
+.sofa-scrollbar {
+    height: 2px !important;
+    .swiper-scrollbar-drag {
+        background-color: var(--color-black);   
+    }
+}

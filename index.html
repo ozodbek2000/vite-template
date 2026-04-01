@@ -7,7 +7,7 @@
         <title>MANN HOME</title>
     </head>
     <body>
-        <div class="root">
+        <div class="root max-md:mb-70.75">
             
             <div class="bg-brown text-white relative z-3 max-sm:text-sm">
                 <div class="container flex-between-center h-12.5">
@@ -21,7 +21,7 @@
                 </div>
             </div>
 
-            <div class="max-w-119.5 bg-white px-8 py-6 fixed top-0 [&.active]:left-0 z-99 h-screen opacity-0 invisible [&.active]:visible [&.active]:opacity-100 transition-300 -left-full">
+            <div class="max-w-119.5 bg-white px-8 py-6 fixed md:top-0 [&.active]:left-0 z-99 h-screen opacity-0 invisible [&.active]:visible [&.active]:opacity-100 transition-300 -left-full max-md:h-75 max-md:bottom-0 max-md:p-4 max-md:w-full">
 
                 <div class="">
                     <svg class="size-6 close ml-auto close-popup cursor-pointer">
@@ -30,10 +30,10 @@
                         />
                     </svg>
                 </div>
-                <h3 class="text-[24px] font-bold mt-6">
+                <h3 class="text-[24px] font-bold mt-6 max-md:text-[20px]">
                     Выберите предпочтительный язык
                 </h3>
-                <div class="flex items-center gap-3 text-sm mt-6 mb-18">
+                <div class="flex items-center gap-3 text-sm mt-6 mb-18 max-md:mb-12">
                     <div class="h-10 p-3 bg-grey-1 rounded-[100px] flex items-center justify-center cursor-pointer">
                         Русский
                     </div>
@@ -49,122 +49,9 @@
             {{>header}}
 
             <main>
-                <section class="main py-3.5">
-                    <div class="container">
-                        <div class="flex gap-5">
-                            <div class="collection swiper-container min-w-0 overflow-hidden flex-[0_1_50%] rounded-md relative max-sm:hidden">
-                                <div class="swiper-wrapper inline-flex">
-                                    <div class="swiper-slide">
-                                        <img class="rounded-md" src="./public/images/jpg/banner01.jpg" alt="banner">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img class="rounded-md" src="./public/images/jpg/banner01.jpg" alt="banner">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img class="rounded-md" src="./public/images/jpg/banner01.jpg" alt="banner">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img class="rounded-md" src="./public/images/jpg/banner01.jpg" alt="banner">
-                                    </div>
-                                </div>
-                                <div class="absolute bottom-6! left-0 w-full flex justify-center z-1">
-                                    <div class="collection-pagination text-center"></div>
-                                </div>
-                            </div>
-                            <div class="discount swiper-container min-w-0 overflow-hidden flex-[0_1_50%] rounded-md relative max-sm:flex-[1_1_100%]">
-                                <div class="swiper-wrapper inline-flex">
-                                    <div class="swiper-slide">
-                                        <img class="rounded-md" src="./public/images/jpg/banner02.jpg" alt="banner">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img class="rounded-md" src="./public/images/jpg/banner02.jpg" alt="banner">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img class="rounded-md" src="./public/images/jpg/banner02.jpg" alt="banner">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img class="rounded-md" src="./public/images/jpg/banner02.jpg" alt="banner">
-                                    </div>
-                                </div>
-                                <div class="absolute bottom-6! left-0 w-full flex justify-center z-1">
-                                    <div class="discount-pagination text-center"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="relative">
-                            <div class="flex items-center gap-4.25 mt-12 max-sm:mt-8 whitespace-nowrap overflow-x-auto scroll-off relative category-list max-sm:-mx-4 max-sm:px-4">
-                                <a href="##" class="flex items-center flex-col bg-grey-1 rounded-md w-34 h-37 gap-1 text-sm flex-[0_0_135px] pt-6 ">
-                                    <img src="./public/images/png/category01.png" alt="category">
-                                    <span class="max-w-25.75 text-center text-wrap">Диваны</span>
-                                </a>
-                                <a href="##" class="flex items-center flex-col bg-grey-1 rounded-md w-34 h-37 gap-1 text-sm flex-[0_0_135px] pt-6">
-                                    <img src="./public/images/png/category02.png" alt="category">
-                                    <span class="max-w-25.75 text-center text-wrap">Кровати</span>
-                                </a>
-                                <a href="##" class="flex items-center flex-col bg-grey-1 rounded-md w-34 h-37 gap-1 text-sm flex-[0_0_135px] pt-6">
-                                    <img src="./public/images/png/category03.png" alt="category">
-                                    <span class="max-w-25.75 text-center text-wrap">Матрасы</span>
-                                </a>
-                                <a href="##" class="flex items-center flex-col bg-grey-1 rounded-md w-34 h-37 gap-1 text-sm flex-[0_0_135px] pt-6">
-                                    <img src="./public/images/png/category04.png" alt="category">
-                                    <span class="max-w-25.75 text-center text-wrap">Кресла</span>
-                                </a>
-                                <a href="##" class="flex items-center flex-col bg-grey-1 rounded-md w-34 h-37 gap-1 text-sm flex-[0_0_135px] pt-6">
-                                    <img src="./public/images/png/category05.png" alt="category">
-                                    <span class="max-w-25.75 text-center text-wrap">Шкафы</span>
-                                </a>
-                                <a href="##" class="flex items-center flex-col bg-grey-1 rounded-md w-34 h-37 gap-1 text-sm flex-[0_0_135px] pt-6">
-                                    <img src="./public/images/png/category06.png" alt="category">
-                                    <span class="max-w-25.75 text-center text-wrap">Вешалки</span>
-                                </a>
-                                <a href="##" class="flex items-center flex-col bg-grey-1 rounded-md w-34 h-37 gap-1 text-sm flex-[0_0_135px] pt-6">
-                                    <img src="./public/images/png/category07.png" alt="category">
-                                    <span class="max-w-25.75 text-center text-wrap">Столы</span>
-                                </a>
-                                <a href="##" class="flex items-center flex-col bg-grey-1 rounded-md w-34 h-37 gap-1 text-sm flex-[0_0_135px] pt-6">
-                                    <img src="./public/images/png/category08.png" alt="category">
-                                    <span class="max-w-25.75 text-center text-wrap">Стулья</span>
-                                </a>
-                                <a href="##" class="flex items-center flex-col bg-grey-1 rounded-md w-34 h-37 gap-1 text-sm flex-[0_0_135px] pt-6">
-                                    <img src="./public/images/png/category09.png" alt="category">
-                                    <span class="max-w-25.75 text-center text-wrap">Зеркала</span>
-                                </a>
-                                <a href="##" class="flex items-center flex-col bg-grey-1 rounded-md w-34 h-37 gap-1 text-sm flex-[0_0_135px] pt-6">
-                                    <img src="./public/images/png/category10.png" alt="category">
-                                    <span class="max-w-25.75 text-center text-wrap">Комоды и тумбы</span>
-                                </a>
-                                <a href="##" class="flex items-center flex-col bg-grey-1 rounded-md w-34 h-37 gap-1 text-sm flex-[0_0_135px] pt-6">
-                                    <img src="./public/images/png/category11.png" alt="category">
-                                    <span class="max-w-25.75 text-center text-wrap">Навесные полки</span>
-                                </a>
-                                <a href="##" class="flex items-center flex-col bg-grey-1 rounded-md w-34 h-37 gap-1 text-sm flex-[0_0_135px] pt-6">
-                                    <img src="./public/images/png/category12.png" alt="category">
-                                    <span class="max-w-25.75 text-center text-wrap">Пуфы и банкетки</span>
-                                </a>
-                                <a href="##" class="flex items-center flex-col bg-grey-1 rounded-md w-34 h-37 gap-1 text-sm flex-[0_0_135px] pt-6">
-                                    <img src="./public/images/png/category13.png" alt="category">
-                                    <span class="max-w-25.75 text-center text-wrap">Светильники</span>
-                                </a>
-                                <a href="##" class="flex items-center flex-col bg-grey-1 rounded-md w-34 h-37 gap-1 text-sm flex-[0_0_135px] pt-6">
-                                    <img src="./public/images/png/category14.png" alt="category">
-                                    <span class="max-w-25.75 text-center text-wrap">Товары для сна</span>
-                                </a>
-                                <a href="##" class="flex items-center flex-col bg-grey-1 rounded-md w-34 h-37 gap-1 text-sm flex-[0_0_135px] pt-6">
-                                    <img src="./public/images/png/category15.png" alt="category">
-                                    <span class="max-w-25.75 text-center text-wrap">Аксессуары и декор</span>
-                                </a>
-                            </div>
-                            <div class="bg-brown-light absolute top-14 -right-4 size-9 rounded-full flex items-center justify-center cursor-pointer category-next max-sm:hidden"  >
-                                <svg class="h-3 w-1.5">
-                                    <use
-                                        xlink:href="/sprites.svg#vector-right"
-                                    />
-                                </svg>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </section>
+                {{>main}}
+                {{>sofa}}
+                {{>brands}}
             </main>
 
             <!-- {{>footer}} -->
