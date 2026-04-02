@@ -2,20 +2,21 @@ import IMask from "imask";
 
 import "/styles/app.css";
 import "./custom-components.js";
-import "./swiper.js"
-import "./toggle.js"
-import "./btnPos.js"
+import "./swiper.js";
+import "./toggle.js";
+import "./btnPos.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-
-
-    
     /* Set scrollbar size */
 
     function handleScrollbarSize() {
-        const scrollbarSize = window.innerWidth - document.documentElement.clientWidth;
+        const scrollbarSize =
+            window.innerWidth - document.documentElement.clientWidth;
 
-        document.documentElement.style.setProperty("--scrollbar-size", `${scrollbarSize}px`);
+        document.documentElement.style.setProperty(
+            "--scrollbar-size",
+            `${scrollbarSize}px`
+        );
     }
     handleScrollbarSize();
 
@@ -89,4 +90,25 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     /* overlay toggle end */
+
+    /* Accordion */
+    /* Accordion — mobile only */
+    const mq = window.matchMedia("(max-width: 767px)");
+
+    function initAccordion() {
+        const accordions = document.querySelectorAll(".accordion");
+
+        accordions.forEach((accordion) => {
+            accordion.addEventListener("click", function () {
+                const isActive = this.classList.contains("active");
+                accordions.forEach((el) => el.classList.remove("active"));
+                if (!isActive) this.classList.add("active");
+            });
+        });
+    }
+
+    if (mq.matches) {
+        initAccordion();
+    }
+    /* Accordion end */
 });

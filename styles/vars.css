@@ -195,3 +195,34 @@
     }
 }
 /* Title end */
+
+/* Accordion */
+@utility accordion {
+    @media (max-width: 767px) {
+        overflow:hidden;
+        ul {
+            max-height: 0px;
+            /* opacity: 0; */
+            visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            transition: 0.3s ease all;
+            a {
+                font-weight: 500;
+                color: var(--color-grey-3);
+            }
+        }
+        &.active {
+            margin: 0;
+            padding: 0;
+            ul {
+                max-height: 1000px;
+                /* opacity: 1; */
+                visibility: visible;
+                padding-bottom: 32px;   
+            }
+        }
+    }
+}
+/* Accordion end */

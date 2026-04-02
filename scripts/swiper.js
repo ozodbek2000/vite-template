@@ -17,9 +17,9 @@ var discountSwiper = new Swiper(".discount", {
     },
 });
 
-var discountSwiper = new Swiper(".sofa", {
+var sofaSwiper = new Swiper(".sofa", {
     spaceBetween: 16,
-    slidesPerView: 1.3  ,
+    slidesPerView: 1.3,
     scrollbar: {
         el: document.querySelector(".sofa-scrollbar"),
         // hide: true,
@@ -33,6 +33,33 @@ var discountSwiper = new Swiper(".sofa", {
                 rows: 2,
                 fill: "row",
             },
+        },
+    },
+});
+
+var adSwiper = new Swiper(".ad", {
+    spaceBetween: 16,
+    slidesPerView: 1.1,
+    scrollbar: {
+        el: document.querySelector(".ad-scrollbar"),
+        // hide: true,
+        draggable: true,
+    },
+    breakpoints: {
+        767: {
+            spaceBetween: 20,
+            slidesPerView: 4,
+        },
+    },
+});
+
+var productSwiper = new Swiper(".products", {
+    spaceBetween: 16,
+    slidesPerView: 1.2,
+    breakpoints: {
+        767: {
+            spaceBetween: 20,
+            slidesPerView: 4,
         },
     },
 });
